@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Session Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <form action="" id="userForm">
+        <label for="fname">First Name: </label>
+        <input type="text" id="" </form>
+
+        <script>
+            function saveData() {
+                const fname = document.getElementById('fname').values;
+
+                sessionStorage.setItem('fname', fname);
+                alert('Data saved to session storage');
+            }
+
+            function loadData() {
+                const firstName = sessionStorage.getItem('fname');
+
+                if (firstName) {
+                    document.getElementById('fname').value = firstname;
+                    alert('Stored data for First Name has loaded');
+                } else {
+                    alert('No data stored for First Name');
+                }
+            }
+
+            function clearData() {
+                const first
+            }
+        </script>
+</body>
+
+</html>
